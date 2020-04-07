@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.iota</groupId>
-  <artifactId>iota-client-example</artifactId>
+  <artifactId>iota_example</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>iota-client-example</name>
@@ -19,6 +19,7 @@
   </parent>
 
   <properties>
+    <start-class>iota_example.App</start-class>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -105,6 +106,10 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>1.5.2.RELEASE</version>
+          <configuration>
+            <mainClass>iota_example.App</mainClass>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
