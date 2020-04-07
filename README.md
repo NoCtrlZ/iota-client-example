@@ -1,21 +1,32 @@
 # IOTA Sample Client
-## Compile
+## Setup
+### Install Dependencies
+```
+$ mvn dependency:tree
+```
+### Compile
 ```
 $ mvn compile
 ```
-## Unit Test
+### Unit Test
 ```
 $ mvn test
 ```
-## Conect To Node
+## Interaction
+### Conect To Node
 ```
 $ mvn exec:java -Dexec.mainClass="com.iota.ConnectToNode"
 ```
-## Get Transaction Inoformation
+### Get Transaction Inoformation
 ```
 $ mvn exec:java -Dexec.mainClass="com.iota.GetTransaction"
 ```
-## Send Tokens
+### Send Tokens
 ```
 $ mvn exec:java -Dexec.mainClass="com.iota.TransferFrom
+```
+## Spring Boot
+### Start
+```
+$ mvn spring-boot:run
 ```
