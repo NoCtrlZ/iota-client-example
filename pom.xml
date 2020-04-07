@@ -37,6 +37,7 @@
     <dependency>
         <groupId>org.iota</groupId>
         <artifactId>jota</artifactId>
+        <classifier>jar-with-dependencies</classifier>
         <version>1.0.0-beta8</version>
     </dependency>
 

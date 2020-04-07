@@ -2,8 +2,9 @@ package com.iota;
 
 import org.iota.jota.IotaAPI;
 import org.iota.jota.dto.response.GetNodeInfoResponse;
+import org.iota.jota.error.ArgumentException;
 
-class ConnectToNode {
+public class ConnectToNode {
 public static void main(String[] args) throws ArgumentException {
 
         // Create a new instance of the API object
