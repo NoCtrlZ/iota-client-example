@@ -15,3 +15,7 @@ $ mvn exec:java -Dexec.mainClass="com.iota.ConnectToNode"
 ```
 $ mvn exec:java -Dexec.mainClass="com.iota.GetTransaction"
 ```
+## Send Tokens
+```
+$ mvn exec:java -Dexec.mainClass="com.iota.TransferFrom
+```
