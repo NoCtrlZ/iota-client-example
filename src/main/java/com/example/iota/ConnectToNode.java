@@ -7,16 +7,13 @@ import org.iota.jota.error.ArgumentException;
 class ConnectToNode {
     public static void main(String[] args) throws ArgumentException {
 
-            // Create a new instance of the API object
-            // and specify which node to connect to
-            IotaAPI api = new IotaAPI.Builder()
-                .protocol("https")
-                .host("nodes.devnet.thetangle.org")
-                .port(443)
-                .build();
+        IotaAPI api = new IotaAPI.Builder()
+            .protocol("https")
+            .host("nodes.devnet.thetangle.org")
+            .port(443)
+            .build();
 
-            // Call the `getNodeInfo()` method for information about the node and the Tangle
-            GetNodeInfoResponse response = api.getNodeInfo();
-            System.out.println(response);
-        }
+        GetNodeInfoResponse response = api.getNodeInfo();
+        System.out.println(response);
+    }
 }
